@@ -7,6 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-c = Cocktail.create(name: "Mojito")
-i = Ingredient.create(name: "Lima")
-Dose.create(description: "a lot", cocktail: c, ingredient: i)
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+
+Cocktail.create(name: "mojito")
+Cocktail.create(name: "sex on the beach")
+Cocktail.create(name: "caipirinha")

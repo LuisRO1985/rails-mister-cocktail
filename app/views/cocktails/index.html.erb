@@ -1,2 +1,18 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
+<h1 class= "text-center">Cocktails</h1>
+<div class= "text-center">
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <h2><%= cocktail.name %></h2>
+
+        <%= link_to "Check it out!", cocktail_path(cocktail), class: "btn-xs btn-primary" %>
+        <%= link_to "Edit it!", edit_cocktail_path(cocktail), class: "btn-xs btn-primary"%>
+        <%= link_to "Eliminate it!", cocktail_path(cocktail), method: :delete, class: "btn-xs btn-primary"%>
+        </div>
+
+        <% end %>
+
+    </div>
+  </div>
+</div>
